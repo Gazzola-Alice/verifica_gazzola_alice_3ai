@@ -3,14 +3,17 @@ int ledrosso =11;
 int ledgiallo=10;
 int ledbianco=9;
 int i=0;
-int durata=random(100,1000);
+int durata;
 int sequenza;
 void setup() {
 pinMode(ledverde,OUTPUT);
 pinMode(ledrosso,OUTPUT);
 pinMode(ledgiallo,OUTPUT);
 pinMode(ledbianco,OUTPUT);
+durata=random(100,1000);
 Serial.begin(9600);
+Serial.println("Durata random: ");
+Serial.println(durata);
 chiedocicli();
 //chiedodurata();
 }
